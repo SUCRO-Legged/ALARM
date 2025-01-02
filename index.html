@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ALARM</title>
+  <link rel="icon" href="./resources/sucrologo.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            <span style="font-weight: normal;"><b>ALARM</b> </span>: <br>Safe Reinforcement Learning with Reliable Mimic for Robust Legged Locomotion</span>
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/KK-Zhou">Qiqi Zhou</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/hhhhh121">Hui Ding</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://faculty.sdu.edu.cn/chenteng12/en/index.htm">Teng Chen</a><sup>1</sup><sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/JIangHan1913">Han Jiang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://faculty.sdu.edu.cn/zhangguoteng/en/index.htm">Guoteng Zhang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <br>
+              <a href="http://webplus.qlu.edu.cn/_s100/2021/0916/c8150a173172/page.psp">Bin Li</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://control.sdu.edu.cn/info/1084/6477.htm">Xuewen Rong</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://control.sdu.edu.cn/info/1083/2291.htm">Yibin Li</a><sup>1</sup>
+              <br>
+              <br>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <sup>1</sup>
+                  Shandong University
+                </span>
+                <span class="author-block">
+                  <sup>2</sup>
+                  Qilu University of Technology
+                </span>
+                <span class="author-block">
+                  <sup>*</sup>
+                  Corresponding author
+                </span>
+              </div>
+
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+            <!-- Arxiv PDF link -->
+            <span class="link-block">
+              <a href="./resources/ALARM.pdf" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-file-pdf"></i>
+              </span>
+              <span>Paper</span>
+              </a>
+            </span>
+
+            <!-- Supplementary Video link -->
+            <span class="link-block">
+              <a href="https://space.bilibili.com/479324235?spm_id_from=333.337.0.0" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-bilibili"></i>
+              </span>
+              <span>Go1 Video</span>
+              </a>
+            </span>
+
+            <!-- Github link -->
+            <span class="link-block">
+              <a href="https://github.com/SUCRO-Legged/ALARM" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+              </a>
+            </span>
+
+            <!-- ArXiv abstract Link -->
+            <!-- <span class="link-block">
+              <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span>
+              </a>
+            </span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="./resources/video/collection.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Legged robots are supposed to traverse complicated environments, which makes it challenging to design a model-based controller due to their functional complexity. Currently, using deep reinforcement learning to improve the adaptability of robots in complex scenarios has been a major research trend. In this paper, we propose Adaptive Latent Aggregation for Reliable
+            Mimicry (ALARM), a reinforcement learning framework that enables both safe and robust locomotion in legged robots using only proprioception. This work features a one-step teacher-student training paradigm by constructing an adaptive aggregation strategy, which combines the merits of imitation learning and reinforcement learning splendidly. The framework integrates the NP3O algorithm, which penalizes constraint-violating behaviors while optimizing locomotion strategies. This effectively ensures the safety of the robot during locomotion. Experiments demonstrate ALARM's adaptability across challenging terrains, with superior safety and robustness. Our method also facilitates efficient sim-to-real transfer, outperforming the state-of-the-art method in constraint adherence and performance, offering a promising approach for real-world legged robot applications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Paper Method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">Method</h2>
+        <img src="./resources/method.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;" data-immersive-translate-walked="246d7402-74de-46fe-bdda-4a3edd1c0f55">
+        <div class="content has-text-justified">
+          <p>
+            Overview of the training method. We first normalize state information and last action. Then, the teacher encoder uses the processed privileged information to output the reference latent variables, while the student encoder imitates the implicit encoding and estimates the explicit states. By adopting the adaptive aggregation strategy, the RL network can leverage the privileged information to accelerate convergence during the early stages of training, ultimately relying solely on proprioceptive feedback to navigate challenging terrains. During this process, the decoder provides contextual guidance for the latent representation. NP3O effectively constrains the robot's behavior.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper Method -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="title is-3" style="text-align: center; margin-bottom: 20px; font-size: x-large;">Trolley</h3>
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item">
+          <video autoplay muted loop playsinline controls 
+                src="./resources/video/trolley_1.mp4" width="100%"
+                style="border-radius:10px;"></video>
+          <h2 class="subtitle has-text-centered">
+            Forward Locomotion on Trolley.
+          </h2>
+        </div>
+
+        <div class="item">
+          <video autoplay muted loop playsinline controls 
+                src="./resources/video/trolley_3.mp4" width="100%"
+                style="border-radius:10px;"></video>
+          <h2 class="subtitle has-text-centered">
+            Locomotion on Moving Trolley.
+          </h2>
+        </div>
+
+        <div class="item">
+          <video autoplay muted loop playsinline controls 
+                src="./resources/video/trolley_2.mp4" width="100%"
+                style="border-radius:10px;"></video>
+          <h2 class="subtitle has-text-centered">
+            Lateral Locomotion on Trolley.
+          </h2>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End Video carousel -->
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Indoor Experiments</h2>
+        <tr>
+          <td>
+          
+          <h3 class="title is-3" style="text-align: center; margin-bottom: 20px; font-size: x-large;">Anti-disturbance</h3>
+          <div class="row">
+            <div class="col">
+              <video autoplay muted loop playsinline controls 
+                     src="./resources/video/anti-disturbance_1.mp4" width="100%"
+                     style="border-radius:10px;"></video>
+            </div>
+            <div class="col">
+              <video autoplay muted loop playsinline controls 
+                     src="./resources/video/anti-disturbance_2.mp4" width="100%"
+                     style="border-radius:10px;"></video>
+            </div>
+          </div>
+          <br>
+
+          <h3 class="title is-3" style="text-align: center; margin-bottom: 20px; font-size: x-large;">Indoor Parkour</h3>
+          <div class="row">
+            <div class="col">
+              <video autoplay muted loop playsinline controls 
+                     src="./resources/video/indoor_parkour_1.mp4" width="100%"
+                     style="border-radius:10px;"></video>
+            </div>
+            <div class="col">
+              <video autoplay muted loop playsinline controls 
+                     src="./resources/video/indoor_parkour_2.mp4" width="100%"
+                     style="border-radius:10px;"></video>
+            </div>
+          </div>
+          <br>
+
+          <h3 class="title is-3" style="text-align: center; margin-bottom: 20px; font-size: x-large;">Trolley</h3>
+          <div class="row">
+            <div class="col">
+              <video autoplay muted loop playsinline controls 
+                    src="./resources/video/trolley_1.mp4" width="100%"
+                    style="border-radius:10px;"></video>
+            </div>
+            <div class="col">
+              <video autoplay muted loop playsinline controls 
+                    src="./resources/video/trolley_3.mp4" width="100%"
+                    style="border-radius:10px;"></video>
+            </div>
+            <div class="col">
+              <video autoplay muted loop playsinline controls 
+                    src="./resources/video/trolley_2.mp4" width="100%"
+                    style="border-radius:10px;"></video>
+            </div>
+            <br>
+
+          </div>
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="title is-3" style="text-align: center; margin-bottom: 20px; font-size: x-large;">Trolley</h3>
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item">
+          <video autoplay muted loop playsinline controls 
+                src="./resources/video/trolley_1.mp4" width="100%"
+                style="border-radius:10px;"></video>
+          <h2 class="subtitle has-text-centered">
+            Forward Locomotion on Trolley.
+          </h2>
+        </div>
+
+        <div class="item">
+          <video autoplay muted loop playsinline controls 
+                src="./resources/video/trolley_3.mp4" width="100%"
+                style="border-radius:10px;"></video>
+          <h2 class="subtitle has-text-centered">
+            Locomotion on Moving Trolley.
+          </h2>
+        </div>
+
+        <div class="item">
+          <video autoplay muted loop playsinline controls 
+                src="./resources/video/trolley_2.mp4" width="100%"
+                style="border-radius:10px;"></video>
+          <h2 class="subtitle has-text-centered">
+            Lateral Locomotion on Trolley.
+          </h2>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End Video carousel -->
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Outdoor Experiments</h2>
+        <tr>
+          <td>
+
+            <div class="row">
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Gravel Road </h3>
+                  <video autoplay muted loop playsinline controls src="./resources/video/gravel_road.mp4" width="100%"
+                        style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Grassland </h3>
+                <video autoplay muted loop playsinline controls src="./resources/video/grassland.mp4" width="100%"
+                      style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Running on Grass </h3>
+                  <video autoplay muted loop playsinline controls src="./resources/video/running.mp4" width="100%"
+                        style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Grass with Obstacle </h3>
+                <video autoplay muted loop playsinline controls src="./resources/video/grass_with_obstacle.mp4" width="100%"
+                      style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Sloping Grassland </h3>
+                  <video autoplay muted loop playsinline controls src="./resources/video/sloping_grassland.mp4" width="100%"
+                        style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Asphalt Slope </h3>
+                <video autoplay muted loop playsinline controls src="./resources/video/asphalt_slope.mp4" width="100%"
+                      style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Broken Porcelain Pieces </h3>
+                  <video autoplay muted loop playsinline controls src="./resources/video/broken_porcelain_pieces.mp4" width="100%"
+                        style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Gravel</h3>
+                <video autoplay muted loop playsinline controls src="./resources/video/gravel.mp4" width="100%"
+                      style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <br>
+
+            <h3 class="title is-3" style="text-align: center; margin-bottom: 20px; font-size: x-large; "> Steep Slope </h3>
+            <div class="row">
+              <div class="col">
+                <video autoplay muted loop playsinline controls 
+                      src="./resources/video/30_degree_slope_1.mp4" width="100%"
+                      style="border-radius:10px;"></video>
+              </div>
+              <div class="col">
+                <video autoplay muted loop playsinline controls 
+                      src="./resources/video/30_degree_slope_2.mp4" width="100%"
+                      style="border-radius:10px;"></video>
+              </div>
+            </div>
+            <br>
+
+            <h3 class="title is-3" style="text-align: center; margin-bottom: 20px; font-size: x-large; "> Stairs </h3>
+            <div class="row">
+              <div class="col">
+                <video autoplay muted loop playsinline controls 
+                      src="./resources/video/stairs_1.mp4" width="100%"
+                      style="border-radius:10px;"></video>
+              </div>
+              <div class="col">
+                <video autoplay muted loop playsinline controls 
+                      src="./resources/video/stairs_2.mp4" width="100%"
+                      style="border-radius:10px;"></video>
+              </div>
+            </div>
+            <br>
+
+            <h3 class="title is-3" style="text-align: center; margin-bottom: 20px; font-size: x-large;"> Outdoor High Platform </h3>
+            <div class="row">
+              <div class="col">
+                <video autoplay muted loop playsinline controls 
+                      src="./resources/video/outdoor_high_platform_1.mp4" width="100%"
+                      style="border-radius:10px;"></video>
+              </div>
+              <div class="col">
+                <video autoplay muted loop playsinline controls 
+                      src="./resources/video/outdoor_high_platform_2.mp4" width="100%"
+                      style="border-radius:10px;"></video>
+              </div>
+            </div>
+            <br>
+
+            <h3 class="title is-3" style="text-align: center; margin-bottom: 20px; font-size: x-large;"> 60cm High Platform </h3>
+            <div class="row">
+              <div class="col">
+                <video autoplay muted loop playsinline controls 
+                      src="./resources/video/60cm_high_platform.mp4" width="100%"
+                      style="border-radius:10px;"></video>
+              </div>
+            </div>
+            <br>
+
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- Paper conclusion -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">Conclusion</h2>
+        <div class="content has-text-justified">
+          <p>
+            In this paper, we propose ALARM, an end-to-end locomotion control framework for legged robots based on imitation learning and reinforcement learning. Through a single training process, it achieves a seamless transition from teacher to student. By introducing NP3O optimization, it effectively and concisely constrains robot behavior, enabling both safe and robust locomotion on complex terrains using only proprioception. Additionally, ALARM facilitates direct transfer from simulation to the real world, featuring low computational resource consumption and fast inference speed. Through comparative and ablation experiments, we demonstrate that our method surpasses current state-of-the-art reinforcement learning controllers in terms of training efficiency and locomotion performance. Our policy has been deployed on various quadrupedal robots, showcasing strong adaptability and resilience in complex environments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper conclusion -->
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre>
+        <code>      
+          @article{zhou2025alarm,
+              title={ALARM: Safe Reinforcement Learning with Reliable Mimic for Robust Legged Locomotion}, 
+              author={Zhou, Qiqi and Ding, Hui and Chen, Teng and Jiang, Han and Zhang, Guoteng and Li, Bin and Rong, Xuewen and Li, Yibin},
+              year={2025},
+          }
+        </code>
+      </pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+<!-- End of Statcounter Code -->
+
+</body>
+</html>
