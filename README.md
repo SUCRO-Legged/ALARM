@@ -1,7 +1,7 @@
 # ALARM: Safe Reinforcement Learning with Reliable Mimic for Robust Legged Locomotion
 Website: https://sucro-legged.github.io/ALARM/
 ## Code
-Pretrained models and codes of this paper:
+Pretrained models and deployment codes of this paper:
 - For SDUQuad48: https://github.com/SUCRO-Legged/SDUQuad48MITSimRL
 - For Unitree Go1: https://github.com/SUCRO-Legged/unitree_ws
 

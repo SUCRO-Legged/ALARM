@@ -96,14 +96,14 @@
           <div class="column has-text-centered">
             <div class="publication-links">
 
-            <!-- Arxiv PDF link -->
+            <!-- Supplementary Video link -->
             <span class="link-block">
-              <a href="./resources/ALARM.pdf" target="_blank"
+              <a href="https://space.bilibili.com/479324235?spm_id_from=333.337.0.0" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
-                <i class="fas fa-file-pdf"></i>
+                <i class="fab fa-bilibili"></i>
               </span>
-              <span>Paper</span>
+              <span>Go1 Video</span>
               </a>
             </span>
 
@@ -114,7 +114,7 @@
               <span class="icon">
                 <i class="fab fa-bilibili"></i>
               </span>
-              <span>Go1 Video</span>
+              <span>SDUQuad48 Video</span>
               </a>
             </span>
 
@@ -129,16 +129,6 @@
               </a>
             </span>
 
-            <!-- ArXiv abstract Link -->
-            <!-- <span class="link-block">
-              <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-              class="external-link button is-normal is-rounded is-dark">
-              <span class="icon">
-                <i class="ai ai-arxiv"></i>
-              </span>
-              <span>arXiv</span>
-              </a>
-            </span> -->
           </div>
         </div>
       </div>
@@ -152,7 +142,6 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="./resources/video/collection.mp4"
         type="video/mp4">
       </video>
@@ -188,7 +177,7 @@
         <img src="./resources/method.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;" data-immersive-translate-walked="246d7402-74de-46fe-bdda-4a3edd1c0f55">
         <div class="content has-text-justified">
           <p>
-            Overview of the training method. We first normalize state information and last action. Then, the teacher encoder uses the processed privileged information to output the reference latent variables, while the student encoder imitates the implicit encoding and estimates the explicit states. By adopting the adaptive aggregation strategy, the RL network can leverage the privileged information to accelerate convergence during the early stages of training, ultimately relying solely on proprioceptive feedback to navigate challenging terrains. During this process, the decoder provides contextual guidance for the latent representation. NP3O effectively constrains the robot's behavior.
+            Overview of the training method. We first normalize state information and last action. Then, the teacher encoder uses the processed privileged information to output the reference latent variables, while the student encoder imitates the implicit encoding and estimates the explicit states. By adopting the adaptive aggregation strategy, the RL network can leverage the privileged information to accelerate convergence during the early stages of training, ultimately relying solely on proprioceptive feedback to navigate challenging terrains. During this process, the decoder provides contextual guidance for the latent representation. NP3O effectively constrains the robot's behavior. (Dashed arrows indicate that gradient backpropagation is not performed).
           </p>
         </div>
       </div>
@@ -197,47 +186,7 @@
 </section>
 <!-- End paper Method -->
 
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h3 class="title is-3" style="text-align: center; margin-bottom: 20px; font-size: x-large;">Trolley</h3>
-      <div id="results-carousel" class="carousel results-carousel">
-
-        <div class="item">
-          <video autoplay muted loop playsinline controls 
-                src="./resources/video/trolley_1.mp4" width="100%"
-                style="border-radius:10px;"></video>
-          <h2 class="subtitle has-text-centered">
-            Forward Locomotion on Trolley.
-          </h2>
-        </div>
-
-        <div class="item">
-          <video autoplay muted loop playsinline controls 
-                src="./resources/video/trolley_3.mp4" width="100%"
-                style="border-radius:10px;"></video>
-          <h2 class="subtitle has-text-centered">
-            Locomotion on Moving Trolley.
-          </h2>
-        </div>
-
-        <div class="item">
-          <video autoplay muted loop playsinline controls 
-                src="./resources/video/trolley_2.mp4" width="100%"
-                style="border-radius:10px;"></video>
-          <h2 class="subtitle has-text-centered">
-            Lateral Locomotion on Trolley.
-          </h2>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End Video carousel -->
-
+<!-- Experiments Video -->
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
@@ -302,46 +251,6 @@
     </div>
   </div>
 </section>
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h3 class="title is-3" style="text-align: center; margin-bottom: 20px; font-size: x-large;">Trolley</h3>
-      <div id="results-carousel" class="carousel results-carousel">
-
-        <div class="item">
-          <video autoplay muted loop playsinline controls 
-                src="./resources/video/trolley_1.mp4" width="100%"
-                style="border-radius:10px;"></video>
-          <h2 class="subtitle has-text-centered">
-            Forward Locomotion on Trolley.
-          </h2>
-        </div>
-
-        <div class="item">
-          <video autoplay muted loop playsinline controls 
-                src="./resources/video/trolley_3.mp4" width="100%"
-                style="border-radius:10px;"></video>
-          <h2 class="subtitle has-text-centered">
-            Locomotion on Moving Trolley.
-          </h2>
-        </div>
-
-        <div class="item">
-          <video autoplay muted loop playsinline controls 
-                src="./resources/video/trolley_2.mp4" width="100%"
-                style="border-radius:10px;"></video>
-          <h2 class="subtitle has-text-centered">
-            Lateral Locomotion on Trolley.
-          </h2>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End Video carousel -->
 
 <section class="section">
   <div class="container">
@@ -468,6 +377,7 @@
     </div>
   </div>
 </section>
+<!-- End Experiments Video -->
 
 <!-- Paper conclusion -->
 <section class="section hero is-light">
