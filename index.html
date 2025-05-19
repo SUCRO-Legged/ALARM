@@ -66,9 +66,10 @@
               <a href="https://github.com/KK-Zhou">Qiqi Zhou</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="https://github.com/hhhhh121">Hui Ding</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="https://faculty.sdu.edu.cn/chenteng12/en/index.htm">Teng Chen</a><sup>1</sup><sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/MLXFranklove">Luxin Man</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="https://github.com/JIangHan1913">Han Jiang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://faculty.sdu.edu.cn/zhangguoteng/en/index.htm">Guoteng Zhang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <br>
+              <a href="https://faculty.sdu.edu.cn/zhangguoteng/en/index.htm">Guoteng Zhang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="http://webplus.qlu.edu.cn/_s100/2021/0916/c8150a173172/page.psp">Bin Li</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="https://control.sdu.edu.cn/info/1084/6477.htm">Xuewen Rong</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="https://control.sdu.edu.cn/info/1083/2291.htm">Yibin Li</a><sup>1</sup>
@@ -159,7 +160,7 @@
         <div class="content has-text-justified">
           <p>
             Legged robots are supposed to traverse complicated environments, which makes it challenging to design a model-based controller due to their functional complexity. Currently, using deep reinforcement learning to improve the adaptability of robots in complex scenarios has been a major research trend. In this paper, we propose Adaptive Latent Aggregation for Reliable
-            Mimicry (ALARM), a reinforcement learning framework that enables both safe and robust locomotion in legged robots using only proprioception. This work features a one-step teacher-student training paradigm by constructing an adaptive aggregation strategy, which combines the merits of imitation learning and reinforcement learning splendidly. The framework integrates the NP3O algorithm, which penalizes constraint-violating behaviors while optimizing locomotion policy. This effectively ensures the safety of the robot during locomotion. Experiments demonstrate ALARM's adaptability across challenging terrains, with superior safety and robustness. Our method also facilitates efficient sim-to-real transfer, outperforming the state-of-the-art method in constraint adherence and performance, offering a promising approach for real-world legged robot applications.
+            Mimicry (ALARM), a reinforcement learning framework that enables safe and robust locomotion in legged robots using only proprioception. This work features a one-step teacher-student training paradigm by constructing an adaptive aggregation strategy, which integrates the merits of imitation learning and reinforcement learning effectively. The framework integrates normalized penalized proximal policy optimization, which penalizes constraint-violating behaviors while optimizing locomotion policy. Our method facilitates efficient sim-to-real transfer, offering a promising approach for real-world legged robot applications.
           </p>
         </div>
       </div>
@@ -177,7 +178,7 @@
         <img src="./resources/method.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;" data-immersive-translate-walked="246d7402-74de-46fe-bdda-4a3edd1c0f55">
         <div class="content has-text-justified">
           <p>
-            Overview of the training method. We first normalize state information and last action. Then, the teacher encoder uses the processed privileged information to output the reference latent variables, while the student encoder imitates the implicit encoding and estimates the explicit states. By adopting the adaptive aggregation strategy, the RL network can leverage the privileged information to accelerate convergence during the early stages of training, ultimately relying solely on proprioceptive feedback to navigate challenging terrains. During this process, the decoder provides contextual guidance for the latent representation. NP3O effectively constrains the robot's behavior. (Dashed arrows indicate that gradient backpropagation is not performed).
+            Overview of the training method. We first normalize state information and last action. Then, the teacher encoder uses the processed privileged information to output the reference latent variables, while the student encoder imitates the implicit encoding and estimates the explicit states. By adopting the adaptive aggregation strategy, the RL network can leverage the privileged information to accelerate convergence during the early stages of training, ultimately relying solely on proprioceptive feedback to navigate challenging terrains. During this process, the decoder provides contextual guidance for the latent representation. NP3O effectively constrains the robot's behavior. The overall optimization objective consists of the supervised learning loss and the reinforcement learning loss. (Dashed arrows indicate that gradient backpropagation is not performed.)
           </p>
         </div>
       </div>
@@ -387,7 +388,7 @@
         <h2 class="title is-2">Conclusion</h2>
         <div class="content has-text-justified">
           <p>
-            In this paper, we propose ALARM, an end-to-end locomotion control framework for legged robots based on imitation learning and reinforcement learning. Through a single training process, it achieves a seamless transition from teacher to student. By introducing NP3O optimization, it effectively and concisely constrains robot behavior, enabling both safe and robust locomotion on complex terrains using only proprioception. Additionally, ALARM facilitates direct transfer from simulation to the real world, featuring low computational resource consumption and fast inference speed. Through comparative and ablation experiments, we demonstrate that our method surpasses current state-of-the-art reinforcement learning controllers in terms of training efficiency and locomotion performance. Our policy has been deployed on various quadrupedal robots, showcasing strong adaptability and resilience in complex environments.
+            In this paper, we propose ALARM, an end-to-end locomotion control framework for legged robots based on imitation learning and reinforcement learning. Through a single training process, it achieves a seamless transition from teacher to student. By introducing NP3O optimization, it effectively and concisely constrains robot behavior, enabling both safe and robust locomotion on complex terrains using only proprioception. Additionally, ALARM facilitates direct transfer from simulation to the real world, featuring low computational resource consumption and fast inference speed. Through comparative and ablation experiments, we demonstrate that our method surpasses current state-of-the-art reinforcement learning controllers in terms of training efficiency and locomotion performance. Our policy has been deployed on multiple quadrupedal robots, showcasing strong adaptability and resilience in complex environments.
           </p>
         </div>
       </div>
@@ -404,7 +405,7 @@
         <code>      
           @article{zhou2025alarm,
               title={ALARM: Safe Reinforcement Learning with Reliable Mimicry for Robust Legged Locomotion}, 
-              author={Zhou, Qiqi and Ding, Hui and Chen, Teng and Jiang, Han and Zhang, Guoteng and Li, Bin and Rong, Xuewen and Li, Yibin},
+              author={Zhou, Qiqi and Ding, Hui and Chen, Teng and Man, Luxin and Jiang, Han and Zhang, Guoteng and Li, Bin and Rong, Xuewen and Li, Yibin},
               year={2025},
           }
         </code>
