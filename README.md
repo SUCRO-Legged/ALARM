@@ -12,5 +12,9 @@ If you find our paper or repositories helpful to your research, please consider 
     title={ALARM: Safe Reinforcement Learning with Reliable Mimicry for Robust Legged Locomotion}, 
     author={Zhou, Qiqi and Ding, Hui and Chen, Teng and Jiang, Han and Zhang, Guoteng and Li, Bin and Rong, Xuewen and Li, Yibin},
     year={2025},
+    volume={10},
+    number={7},
+    pages={6768-6775},
+    doi={10.1109/LRA.2025.3572427}
 }
 ```
